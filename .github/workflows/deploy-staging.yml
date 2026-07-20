@@ -91,7 +91,7 @@ jobs:
         with:
           app-name: $${{ env.AZURE_WEBAPP_NAME }}
           images: ${{env.IMAGE_REGISTRY_URL}}/${{ github.repository }}/${{env.DOCKER_IMAGE_NAME}}:${{ github.sha }}
-      - name: "Azure logout via Azure CLI
+      - name: "Azure logout via Azure CLI"
         uses: azure/CLI@v2
         with: 
           inlineScript: |
